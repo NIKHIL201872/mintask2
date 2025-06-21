@@ -1,3 +1,11 @@
+type Student = record {
+  name: text;
+  total_marks: float32;
+  num_subjects: nat64;
+  average: float32;
+  grade: text;
+};
+
 service : {
-    "greet": (text) -> (text) query;
+  generate_report: (text, float32, nat64) -> (Student);
 }
