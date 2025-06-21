@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "mintask2_backend": {
+      "candid": "src/mintask2_backend/mintask2_backend.did",
+      "package": "mintask2_backend",
+      "type": "rust"
+    },
+    "mintask2_frontend": {
+      "dependencies": [
+        "mintask2_backend"
+      ],
+      "source": [
+        "src/mintask2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "mintask2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
